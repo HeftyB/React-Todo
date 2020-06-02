@@ -1,10 +1,25 @@
-* {
-    background-color: ;
+.apps {
+    background-color: #f4f4f4;
+    text-align: center;
+    height: 100vh;
 }
 
+.wrapper {
+    margin: 0% 10%;
+    padding-top: 5%;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
 
-
-.complete {
-    background-color: #d17d7c;
+.complete .card {
+    background-color: #d9534f;
     text-decoration: line-through;
   }
+
+.item {
+    margin: 0% 15%;
+}
+
+.forms {
+    margin-top: 2%;
+}

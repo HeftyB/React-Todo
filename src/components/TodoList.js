@@ -22,6 +22,7 @@
 //     }
 // }
 import React from 'react'
+import { Card, CardTitle, CardText } from 'reactstrap';
 
 export default function TodoList(props) {
     const {currentTodos, toggles} = props;
@@ -31,13 +32,19 @@ export default function TodoList(props) {
                 return (
                     <div key={item.id} onClick={() => toggles(item.id)} 
                     className={`item${item.isComplete ? " complete" : ""}`}>
-                        <h4>{item.title}</h4>
-                        <p>Id: {item.id}</p>
+                        {/* <Col sm="6"> */}
+                            <Card body>
+                                <CardTitle><h4>{item.title}</h4></CardTitle>
+                                <CardText>Id: {item.id}</CardText>
+                            </Card>
+                        {/* </Col> */}
                     </div>
                 )
             })
     return (
         <div>
+            <h1>Current Todos:</h1>
+            <hr/>
             {todos}            
         </div>
     )

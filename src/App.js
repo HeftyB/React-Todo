@@ -62,14 +62,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Todo
-          input={this.state.input}
-          currentTodos={this.state.currentTodos}
-          onInputChange={this.onInputChange}
-          addItem={this.addItem}
-          toggles={this.toggles}
-          clearCompleted={this.clearCompleted}/>
+      <div className="apps">
+        <div className="wrapper">
+          <Todo
+            input={this.state.input}
+            currentTodos={this.state.currentTodos}
+            onInputChange={this.onInputChange}
+            addItem={this.addItem}
+            toggles={this.toggles}
+            clearCompleted={this.clearCompleted}/>
+        </div>
       </div>
     );
   }
